@@ -110,7 +110,6 @@ def main():
         if datalines:
             metrics = parse(datalines)
 
-        if metrics:
             now = int(time.time())
             stats(metrics, graphite_prefix, now)
 
