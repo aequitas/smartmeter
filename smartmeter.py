@@ -103,7 +103,7 @@ def stats(metrics, graphite_prefix, now):
 
 def main():
     tty = os.environ.get('SMARTMETER_TTY', '/dev/ttyUSB0')
-    graphite_prefix = os.environ.get('GRAPHITE_PREFIX', '')
+    graphite_prefix = os.environ.get('GRAPHITE_PREFIX', 'stats')
 
     while True:
         datalines = readpacket(tty)
